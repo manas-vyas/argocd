@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: Reactappservice
+  name: reactappservice
 spec:
   selector:
     name: deployment
@@ -22,12 +22,12 @@ spec:
      name: deployment
    template:
      metadata:
-       name: Reactapp
+       name: reactapp
        labels:
          name: deployment
      spec:
       containers:
-        - name: Reactapp
+        - name: reactapp
           image: manashwi/reactapp:v1
           ports:
             - containerPort: 8080
