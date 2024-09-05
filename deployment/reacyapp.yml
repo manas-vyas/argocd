@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: Reactappservice
+  name: reactappservice
 spec:
   selector:
     name: deployment
